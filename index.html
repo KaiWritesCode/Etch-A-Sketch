@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <h2>Draw A Master Piece</h2>
+    <section>
+        <div class="container">
+            <div class="controls">
+                <div id="board-size-div">
+                    <label for="size">Board size</label>
+                    <span class="size-display">8x8</span>
+                    <input id="range" type="range" min="5" max="30" value="8" onclick="createDivs()">
+                </div>
+
+                <div>
+                    <button class="clear">Clear</button>
+                </div>
+
+                <div class="bottom-options">
+                    <div class="color-div">
+                        <label class="color-label" for="color">Color</label>
+                        <input id="color-input" type="color">
+                    </div>
+                    <!-- <div class="eraser-div"> -->
+                    <!-- <label class="eraser-label" for="eraser">Eraser</label>
+                        <span class="eraser-icon"><i class="fas fa-eraser fa-3x"></i></span> -->
+                </div>
+            </div>
+        </div>
+        <div id="main-grid">
+            <div id="container"></div>
+        </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <span>Created by <a href="https://github.com/TheRealKai">TheRealKai <i class="fab fa-github"></i></span></a>
+    </footer>
+
+</body>
+
+</html>

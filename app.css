@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Rounded', sans-serif;
+}
+
+
+.box {
+    border: 1px solid rgb(20, 20, 20);
+}
+.black-box {
+    background-color: black;
+    color: black;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+}
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em; 
+}
+#container {
+    display: grid;
+    width: 700px;
+    height: 700px;
+    margin-top: 20px;
+    border: 6px solid black;
+}
+#main-grid {
+    display: flex;
+    justify-content: center;
+  
+}
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black; 
+    min-width: 400px;
+    min-height: 400px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    flex-direction: column;
+    background-color: rgb(236, 233, 233);
+    margin-top: 120px;
+}
+.clear {
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.controls label {
+    font-size: 2em;
+    display: block;
+    margin-bottom: .4em;
+}
+.controls input[type="color"] {
+    width: 50px;
+    height: 40px;   
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.controls .start {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px 15px;
+    width: 300px;
+    font-size: 1.2em;
+}
+.controls .bottom-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.eraser-icon {
+    cursor: pointer;
+}
+.eraser-icon i {
+    margin-left: 18px;
+}
+.active-eraser {
+    color: purple;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4em;
+    background-color:rgb(236, 233, 233);
+    width: 100%;
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
